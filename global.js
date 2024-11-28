@@ -8,7 +8,7 @@ import path, { join } from 'path'
 import { platform } from 'process'
 import { fileURLToPath, pathToFileURL } from 'url'
 import * as ws from 'ws'
-import processTxtAndSaveCredentials from './lib/makesession.js'
+import SaveCreds from './lib/makesession.js'
 import clearTmp from './lib/tempclear.js'
 global.__filename = function filename(pathURL = import.meta.url, rmPrefix = platform !== 'win32') {
   return rmPrefix
@@ -45,6 +45,7 @@ const {
   fetchLatestWaWebVersion,
   makeCacheableSignalKeyStore,
   makeInMemoryStore,
+  Browsers,
   proto,
   delay,
   jidNormalizedUser,
@@ -65,8 +66,8 @@ async function main() {
   }
 
   try {
-    await processTxtAndSaveCredentials(txt)
-    console.log('processTxtAndSaveCredentials completed.')
+    await SaveCreds(txt)
+    console.log('Check Completed.')
   } catch (error) {
     console.error('Error:', error)
   }
@@ -183,7 +184,7 @@ const connectionOptions = {
     level: 'fatal',
   }),
   printQRInTerminal: !pairingCode,
-  browser: ["Ubuntu", "Chrome", "20.0.04"],
+  browser: Browsers.macOS("Safari"),
   auth: {
     creds: state.creds,
     keys: makeCacheableSignalKeyStore(

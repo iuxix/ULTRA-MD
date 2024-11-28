@@ -81,10 +81,10 @@ To set up the ULTRA-MD quickly, follow our detailed tutorial on YouTube:
      To set up the ULTRA MD quickly, first fork this repository:
 [![ULTRA MD Github Repo](https://img.shields.io/badge/Github-Fork%20Repo-red?style=for-the-badge&logo=Github)](https://github.com/GlobalTechInfo/ULTRA-MD/fork)
 
-### **Pairing the Bot**
+### **PAIRING CODE QR CODE**
    - Visit the bot site to generate a pairing code and get **SESSION ID.**
 
-     [![ULTRA-MD Github Repo](https://img.shields.io/badge/Whatsapp-Pair%20Code-green?style=for-the-badge&logo=Whatsapp)](https://spectacular-julianna-oletters-26f441db.koyeb.app/)
+     [![ULTRA-MD Github Repo](https://img.shields.io/badge/Whatsapp-Pair%20Code-green?style=for-the-badge&logo=Whatsapp)](https://ultra-pair-e2afa02e65c6.herokuapp.com/)
 
 ### **Step-by-Step Deployment Guide**
 
